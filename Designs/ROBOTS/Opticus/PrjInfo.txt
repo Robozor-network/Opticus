@@ -1,0 +1,19 @@
+﻿//
+// Toto je popisný soubor pro popis obsahu adresáře (příklad)
+//
+
+[InfoShortDescription.en]
+  Robot Opticus
+
+[InfoShortDescription.cs]
+  Robot Opticus
+  
+[InfoLongDescription.en]
+  Robot Merkur was built as project for maturita exam  (2013).
+  The robot is classic line follower.
+
+[InfoLongDescription.cs]
+  Robot Opticus byl postaven jako maturitní projekt (2013).
+  Jedná se o robota pro sledování čáry.
+
+[End]
