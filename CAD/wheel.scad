@@ -4,7 +4,7 @@ tloustka_rafku = 10;
 tloustka_zebrovani = 5;
 tloustka_stredu = 12;
 prumer_stredu = 20;
-prumer_hridele = 4;
+prumer_hridele = 4+1;
 polomer_zakriveni = 15;
 dokonalost_kruhu = 100;
 vyska_loziska = 3;
@@ -38,9 +38,9 @@ module kolo(){
 
         translate([0,30,4])
             rotate([90,0,0])
-                cylinder (h = 30, r= mount_hole/2, $fn=20); // hole for top part mounting screw. 
+                cylinder (h = 30, r= mount_hole/2, $fn=20); // hole for mounting screw. 
         
-        translate([-3 ,3, 0])
+        translate([-3 ,3, 0])       // hole for mounting nut. 
             cube([6, 3, 20], center = false);        
 	}
 }
