@@ -4,7 +4,7 @@ tloustka_rafku = 10;
 tloustka_zebrovani = 5;
 tloustka_stredu = 12;
 prumer_stredu = 20;
-prumer_hridele = 4.7;
+prumer_hridele = 4.9;
 polomer_zakriveni = 15;
 dokonalost_kruhu = 100;
 vyska_loziska = 3;
@@ -30,17 +30,17 @@ module kolo(){
         
         translate([0,0,-tloustka_stredu/2 + vyska_loziska/2 ])
             cylinder(r=4, h=vyska_loziska ,center=true, $fn=20);	// vybrani na mozazne kluzne lozisko na vystupu motoru
-        rotate([0,0,30]){
-            
-            translate([0,30,4])
+
+        rotate([0,0,30]){            
+            translate([0,30,2])
                 rotate([90,0,0])
                     cylinder (h = 30, r= mount_hole/2, $fn=20); // hole for mounting screw. 
             
-            translate([-3 ,3, 0])       // hole for mounting nut. 
+            translate([-3 ,3, -2])       // hole for mounting nut. 
                 cube([6, 3, 20], center = false);
 
             difference() {          // D-cut on axis
-                translate([0,0,  tloustka_stredu-vyska_loziska + 0.2])
+                translate([0,0,  tloustka_stredu-vyska_loziska + 0.6])
                     cylinder(r=prumer_hridele/2, h=tloustka_stredu*2, center=true, $fn=20);
                 translate([-prumer_hridele/2,prumer_hridele/2 - 0.5,-2])
                     cube([10, 10, 200], center=false);
