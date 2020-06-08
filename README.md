@@ -2,4 +2,4 @@
 
 Opticus black line following robot. 
 
-![Photo slider set](/Opticus_Small.jpg)
+![Robot Opticus](/Opticus_Small.jpg)
